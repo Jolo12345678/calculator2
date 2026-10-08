@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Modern CSS Reset for React Applications
+   ========================================================================== */
+
+/* 1. Use a consistent, intuitive box-sizing model across all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. React container & root setup */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent automatic font scaling in mobile browsers */
+  color-scheme: light dark;        /* Enable native dark mode support for form controls */
+}
+
+/* 4. Base typography & rendering defaults */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 5. Responsive media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Form typography reset (ensures inputs/buttons match body font) */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7. Prevent text overflow on headings and paragraphs */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Button styling reset */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 9. Anchor styling reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 10. List styling reset */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 11. Textarea resize behavior */
+textarea {
+  resize: vertical;
+}
+
+/* 12. Create a clean stacking context for React Portals & Modals */
+#root {
+  isolation: isolate;
+}
